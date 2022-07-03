@@ -1,0 +1,43 @@
+
+div#pageWrapper {
+    grid-template-areas:
+        "header header"
+        "navigation content" 
+        "footer footer";
+    grid-template-columns: 150px auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+a.myjump {
+    display: none;
+}
+nav {
+    height: auto;
+}
+
+
+/*----------- MAIN --------------*/
+main {
+    font-size: 0.8rem;
+    h2, p, img {
+        padding: 1vw;
+    }
+    h2 {
+    }
+    img {
+        float: left;
+        width: 40%;
+    }
+}
+
+
+/*----------- FOOTER --------------*/
+    
