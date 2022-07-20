@@ -356,7 +356,11 @@ html {
 div#pageWrapper {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "hamburger" "header" "content" "footer" "navigation";
+      grid-template-areas: "hamburger"
+ "header"
+ "content"
+ "footer"
+ "navigation";
 }
 
 /*----------- BODY --------------*/
@@ -428,6 +432,10 @@ nav ul li a {
   text-align: center;
 }
 
+nav ul li.active a {
+  background-color: #2f455c !important;
+}
+
 nav ul li a:hover {
   background-color: rgba(255, 255, 255, 0.4);
   color: #000;
@@ -497,7 +505,9 @@ footer {
 
 @media only screen and (min-width: 35rem) {
   div#pageWrapper {
-        grid-template-areas: "header header" "navigation content"  "footer footer";
+        grid-template-areas: "header header"
+ "navigation content" 
+ "footer footer";
     -ms-grid-columns: 150px auto;
         grid-template-columns: 150px auto;
   }
@@ -512,7 +522,39 @@ footer {
   }
   /*----------- MAIN --------------*/
   main {
-        grid-template-areas: "parent-header parent-header parent-header" "dgm1220-header dgm1220-header dgm1220-img" "dgm1220-desc dgm1220-desc dgm1220-img" "dgm1600-img dgm1600-header dgm1600-header" "dgm1600-img dgm1600-desc dgm1600-desc" "dgm2120-header dgm2120-header dgm2120-img" "dgm2120-desc dgm2120-desc dgm2120-img" "dgm1230-img dgm1230-header dgm1230-header" "dgm1230-img dgm1230-desc dgm1230-desc" "dgm2250-header dgm2250-header dgm2250-img" "dgm2250-desc dgm2250-desc dgm2250-img" "dgm2341-img dgm2341-header dgm2341-header" "dgm2341-img dgm2341-desc dgm2341-desc" "dgm2760-header dgm2760-header dgm2760-img" "dgm2760-desc dgm2760-desc dgm2760-img" "dgm1240-img dgm1240-header dgm1240-header" "dgm1240-img dgm1240-desc dgm1240-desc" "dgm221r-header dgm221r-header dgm221r-img" "dgm221r-desc dgm221r-desc dgm221r-img" "dgm312g-img dgm312g-header dgm312g-header" "dgm312g-img dgm312g-desc dgm312g-desc" "dgm310r-header dgm310r-header dgm310r-img" "dgm310r-desc dgm310r-desc dgm310r-img" "dgm2740-img dgm2740-header dgm2740-header" "dgm2740-img dgm2740-desc dgm2740-desc" "dgm2240-header dgm2240-header dgm2240-img" "dgm2240-desc dgm2240-desc dgm2240-img" "dgm3740-img dgm3740-header dgm3740-header" "dgm3740-img dgm3740-desc dgm3740-desc" "mktg3960-header mktg3960-header mktg3960-img" "mktg3960-desc mktg3960-desc mktg3960-img" "internship-img internship-header internship-header" "internship-img internship-desc internship-desc";
+        grid-template-areas: "parent-header parent-header parent-header"
+ "dgm1220-header dgm1220-header dgm1220-img"
+ "dgm1220-desc dgm1220-desc dgm1220-img"
+ "dgm1600-img dgm1600-header dgm1600-header"
+ "dgm1600-img dgm1600-desc dgm1600-desc"
+ "dgm2120-header dgm2120-header dgm2120-img"
+ "dgm2120-desc dgm2120-desc dgm2120-img"
+ "dgm1230-img dgm1230-header dgm1230-header"
+ "dgm1230-img dgm1230-desc dgm1230-desc"
+ "dgm2250-header dgm2250-header dgm2250-img"
+ "dgm2250-desc dgm2250-desc dgm2250-img"
+ "dgm2341-img dgm2341-header dgm2341-header"
+ "dgm2341-img dgm2341-desc dgm2341-desc"
+ "dgm2760-header dgm2760-header dgm2760-img"
+ "dgm2760-desc dgm2760-desc dgm2760-img"
+ "dgm1240-img dgm1240-header dgm1240-header"
+ "dgm1240-img dgm1240-desc dgm1240-desc"
+ "dgm221r-header dgm221r-header dgm221r-img"
+ "dgm221r-desc dgm221r-desc dgm221r-img"
+ "dgm312g-img dgm312g-header dgm312g-header"
+ "dgm312g-img dgm312g-desc dgm312g-desc"
+ "dgm310r-header dgm310r-header dgm310r-img"
+ "dgm310r-desc dgm310r-desc dgm310r-img"
+ "dgm2740-img dgm2740-header dgm2740-header"
+ "dgm2740-img dgm2740-desc dgm2740-desc"
+ "dgm2240-header dgm2240-header dgm2240-img"
+ "dgm2240-desc dgm2240-desc dgm2240-img"
+ "dgm3740-img dgm3740-header dgm3740-header"
+ "dgm3740-img dgm3740-desc dgm3740-desc"
+ "mktg3960-header mktg3960-header mktg3960-img"
+ "mktg3960-desc mktg3960-desc mktg3960-img"
+ "internship-img internship-header internship-header"
+ "internship-img internship-desc internship-desc";
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     font-size: 0.8rem;
@@ -828,7 +870,10 @@ footer {
 /* end of media query */
 @media only screen and (min-width: 64rem) {
   div#pageWrapper {
-        grid-template-areas: "header" "navigation"  "content" "footer";
+        grid-template-areas: "header"
+ "navigation" 
+ "content"
+ "footer";
     -ms-grid-columns: auto;
         grid-template-columns: auto;
     max-width: 64rem;

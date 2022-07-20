@@ -418,6 +418,10 @@ nav ul li a {
   text-align: center;
 }
 
+nav ul li.active a {
+  background-color: #2f455c !important;
+}
+
 nav ul li a:hover {
   background-color: rgba(255, 255, 255, 0.4);
   color: #000;
@@ -482,7 +486,9 @@ footer {
 
 @media only screen and (min-width: 35rem) {
   div#pageWrapper {
-        grid-template-areas: "header header" "navigation content"  "footer footer";
+        grid-template-areas: "header header"
+ "navigation content" 
+ "footer footer";
     -ms-grid-columns: 150px auto;
         grid-template-columns: 150px auto;
   }
@@ -512,7 +518,10 @@ footer {
 /* end of media query */
 @media only screen and (min-width: 64rem) {
   div#pageWrapper {
-        grid-template-areas: "header" "navigation"  "content" "footer";
+        grid-template-areas: "header"
+ "navigation" 
+ "content"
+ "footer";
     -ms-grid-columns: auto;
         grid-template-columns: auto;
     max-width: 64rem;
